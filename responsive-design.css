@@ -140,15 +140,16 @@ a:active{
     align-items: center;
 }
 .galary{
-    width:100%;
     display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
 }
-
 .list1-1 {
+    width:30%;
+    margin:2% 0;
     color:#4f4f4f;
-    text-align: center;
-    padding:2%;
-
+    text-align:center;
 }
 .list1-1:hover{
     transition:3s;
@@ -163,58 +164,44 @@ a:active{
 
 /*****************MOBILE STYLES************/
 @media(max-width:800px){
-    h1{
-        font-family:"Chelsea Market",cursive;
-        font-size:48px;
-        color:white;
-        text-shadow: 5px 5px #0e3119;
-    }
     .top-section{
         display:flex;
         flex-direction: column;
-        justify-content:space-around;
+        justify-content:space-between;
         align-items: center;
-        width: 100%; 
-        text-align: center;  
+        width: 100%;   
     }
     .items{
-        display:flex; 
+        width: 20%;
+        display:flex;
         flex-direction: column;
-    }  
+        justify-content: space-between;
+    }
     .text{
         width: 60%; 
     }
 
 /***************MOBILE STYLES******************/
 @media(max-width:500px){
-    text{
-        width:80vw;
-        height:80vh;
+    h1{
+        font-size:30px;
     }
-
+    p{
+        font-size: 1rem;
+    }
+    .top-section{
+        display:flex;
+        flex-direction: column;
+    }
+    .items{
+        width: 20%;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .list1-1{
+        width:40%;
+    }
 }
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
