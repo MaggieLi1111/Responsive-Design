@@ -1,6 +1,6 @@
 /* Add CSS styling here */
 /* CSS reset */
-html, body, div, span, applet, object, iframe,
+html, body, div, p, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -57,12 +57,13 @@ html{
 body{
     font-size:1.6rem;
     line-height:1.5;
-    color:#4f4f4f;
+    color:white;
     font-family:"Roboto Mono",monospace;
 }
 header,footer{
     background-color:rgba(27, 99, 40, 0.8); 
-    padding:2%;      
+    padding:2%;   
+    width: 100%;   
 }
 h1{
     font-family:"Chelsea Market",cursive;
@@ -71,11 +72,11 @@ h1{
     text-shadow: 5px 5px #0e3119;
 }
 h2{
-    font-size:3rem;
+    font-size:2.5rem;
 }
 h2:hover{
     transition: 0.3s;
-    transform:scale(1.3);
+    transform:scale(1.5);
     text-transform: uppercase;
 }
 h3{
@@ -91,7 +92,7 @@ a{
   border-radius: 10px;  
 }
 a:hover{
-    transition: 0.5s;
+    transition: 0.3s;
     background-color: #1a3a1f;
     color:rgba(244, 250, 247, 0.685);
 }
@@ -105,58 +106,63 @@ a:active{
     display:flex;
     justify-content:space-between;
     align-items: center;
+    width: 100%;   
 }
 .items{
     display: flex;
+    width:30%;
     justify-content: space-between;   
 }
-.items a{
-    margin-left:50px;
-}
-
-p{
-    padding:0 1%;
-    text-align: center;
-}
 p:hover{
-    transition:1s;
+    transition:0.5s;
     text-transform: uppercase;
     font-size:1.5rem;
-    color:yellowgreen;
+    color:rgb(251, 252, 249);
 }
 
 .info{
     display:flex;
     justify-content: center;
     align-items: center;
-    width:100vw;
+    margin:3% 6%;
     height: 80vh;
-    margin: 2%;
     background:url(Wireframes/main.jpg);
     background-position: center;
     background-size: cover;
 }
 .text{
-    width: 30%;    
+    width: 40%;  
+    height: auto;
+    background-color: rgba(27, 99, 40, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
-.list1 img, .list2 img{
-    width:280px;
-    height:200px;
-    margin-bottom: 1%;
-
+.list{
+    display: flex;
 }
-.list1 img:hover,.list2 img:hover{
-    transition:1s;
-    border-radius: 50%;
+.list1-1 {
+    margin:40px;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    color:#4f4f4f;
+}
+.list1-1:hover{
+    transition:3s;
     transform: scale(1.3);
 }
-
-
-
-
 
 .contact{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*****************MOBILE STYLES************/
+@media(max-width:800px){
+    
 }
